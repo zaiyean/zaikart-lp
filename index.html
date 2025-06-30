@@ -6,11 +6,7 @@
   <title>第1回 大矢知キッズカートグランプリ</title>
   <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Kosugi Maru', sans-serif;
       background: #fffcee;
@@ -34,8 +30,7 @@
     }
     h2 {
       font-size: 1.4em;
-      margin-top: 30px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       color: #0099cc;
     }
     h3 {
@@ -47,17 +42,9 @@
       margin-bottom: 18px;
       font-size: 1em;
     }
-    .info-box {
-      background: #f0faff;
-      border-left: 5px solid #0099cc;
-      border-radius: 8px;
-      padding: 12px 16px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .info-box dt {
-      font-weight: bold;
-      margin-bottom: 4px;
+    ul li, dl dt, dl dd {
+      margin-left: 15px;
+      margin-bottom: 6px;
     }
     .img-center {
       display: block;
@@ -67,19 +54,21 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
     .btn {
-      display: inline-block;
-      background: #00C300;
+      display: block;
+      width: 100%;
+      max-width: 280px;
+      margin: 25px auto 0;
+      background: #06C755; /* LINEグリーン */
       color: white;
-      padding: 14px 20px;
-      font-size: 1em;
+      padding: 14px;
+      font-size: 1.05em;
       border-radius: 8px;
       text-decoration: none;
+      text-align: center;
       transition: background 0.3s;
-      margin-top: 20px;
-      font-weight: bold;
     }
     .btn:hover {
-      background: #00a600;
+      background: #04a94e;
     }
     .faq dt {
       font-weight: bold;
@@ -99,21 +88,20 @@
       border-top: 2px dashed #ddd;
       border-radius: 0 0 10px 10px;
     }
+
+    .section-box {
+      background: #f5faff;
+      border: 2px solid #cce7ff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 25px;
+    }
+
     @media screen and (max-width: 480px) {
-      h1 {
-        font-size: 1.5em;
-      }
-      h2 {
-        font-size: 1.2em;
-      }
-      h3 {
-        font-size: 1.1em;
-      }
-      .btn {
-        width: 100%;
-        text-align: center;
-        font-size: 1em;
-      }
+      h1 { font-size: 1.6em; }
+      h2 { font-size: 1.2em; }
+      h3 { font-size: 1.1em; }
+      .btn { font-size: 1em; padding: 12px; }
     }
   </style>
 </head>
@@ -122,57 +110,57 @@
     <h1>第1回 大矢知キッズ<br>カートグランプリ</h1>
     <p style="text-align:center; font-size:1.1em;">🎮 笑顔と友情が走り出す！<br>子どもたちによる本気の1対1レース 🏁</p>
 
-    <h2>イベント概要</h2>
-    <dl>
-      <div class="info-box">
+    <div class="section-box">
+      <h2>イベント概要</h2>
+      <dl>
         <dt>📅 開催日時</dt><dd>〇月〇日（土）13:00〜</dd>
-      </div>
-      <div class="info-box">
         <dt>📍 会場</dt><dd>大矢知コミュニティセンター</dd>
-      </div>
-      <div class="info-box">
         <dt>👦 対象</dt><dd>小学生（1〜6年生）</dd>
-      </div>
-      <div class="info-box">
         <dt>💰 参加費</dt><dd>初回限定500円（2回目以降は800円予定）</dd>
-      </div>
-      <div class="info-box">
         <dt>🎫 定員</dt><dd>先着8名（事前申込制）</dd>
-      </div>
-    </dl>
+      </dl>
+    </div>
 
-    <h2>大会の特徴</h2>
-    <h3>🚗 本格レース体験</h3>
-    <p>「Nintendo Switch マリオカート ライブ ホームサーキット」を使用し、実際のカートを走らせて1対1の真剣勝負をします！</p>
-    <img src="マリオカート.jpg" alt="マリオカート ライブ ホームサーキット" class="img-center" />
+    <div class="section-box">
+      <h2>大会の特徴</h2>
+      <h3>🚗 本格レース体験</h3>
+      <p>「Nintendo Switch マリオカート ライブ ホームサーキット」を使用し、実際のカートを走らせて1対1の真剣勝負をします！</p>
+      <img src="マリオカート.jpg" alt="マリオカート ライブ ホームサーキット" class="img-center" />
 
-    <h3>📏 シンプルなルール</h3>
-    <p>予選2レース（ポイント＋タイム）→ 準決勝 → 決勝 でチャンピオンを決定！</p>
+      <h3>📏 シンプルなルール</h3>
+      <p>予選2レース（ポイント＋タイム）→ 準決勝 → 決勝 でチャンピオンを決定！</p>
 
-    <h3>👪 親子で楽しめる</h3>
-    <p>保護者の応援や観戦、写真撮影もOK！地域の親子がつながれるチャンスです。</p>
+      <h3>👪 親子で楽しめる</h3>
+      <p>保護者の応援や観戦、写真撮影もOK！地域の親子がつながれるチャンスです。</p>
 
-    <h3>🎁 景品あり！</h3>
-    <p>上位入賞者への景品＆全員に参加賞をプレゼント！</p>
+      <h3>🎁 景品あり！</h3>
+      <p>上位入賞者への景品＆全員に参加賞をプレゼント！</p>
+    </div>
 
-    <h2>主催者の想い</h2>
-    <p>ゲームを通じて、子どもたちの挑戦と地域のつながりを育みたい。<br>大矢知を“半田で一番楽しい地区”にすることを目指しています！</p>
+    <div class="section-box">
+      <h2>主催者の想い</h2>
+      <p>ゲームを通じて、子どもたちの挑戦と地域のつながりを育みたい。<br>大矢知を“半田で一番楽しい地区”にすることを目指しています！</p>
+    </div>
 
-    <h2>よくある質問</h2>
-    <dl class="faq">
-      <dt>Q. ゲームが苦手でも大丈夫？</dt>
-      <dd>A. 大丈夫！楽しむ気持ちがあればOKです😊</dd>
-      <dt>Q. 幼児の兄弟を連れて行ってもいい？</dt>
-      <dd>A. はい！小さなお子様用のキッズスペースも用意しています。</dd>
-      <dt>Q. 雨の日は中止？</dt>
-      <dd>A. 屋内イベントなので天候に関係なく開催します。</dd>
-      <dt>Q. カートやゲーム機は持参？</dt>
-      <dd>A. 機材はすべて主催者が用意します。手ぶらでどうぞ！</dd>
-    </dl>
+    <div class="section-box">
+      <h2>よくある質問</h2>
+      <dl class="faq">
+        <dt>Q. ゲームが苦手でも大丈夫？</dt>
+        <dd>A. 大丈夫！楽しむ気持ちがあればOKです😊</dd>
+        <dt>Q. 幼児の兄弟を連れて行ってもいい？</dt>
+        <dd>A. はい！小さなお子様用のキッズスペースも用意しています。</dd>
+        <dt>Q. 雨の日は中止？</dt>
+        <dd>A. 屋内イベントなので天候に関係なく開催します。</dd>
+        <dt>Q. カートやゲーム機は持参？</dt>
+        <dd>A. 機材はすべて主催者が用意します。手ぶらでどうぞ！</dd>
+      </dl>
+    </div>
 
-    <h2>参加方法</h2>
-    <p>LINE公式アカウントから事前エントリーをお願いします（先着順）。</p>
-    <a href="#" class="btn">LINEで申し込む</a>
+    <div class="section-box">
+      <h2>参加方法</h2>
+      <p>LINE公式アカウントから事前エントリーをお願いします（先着順）。</p>
+      <a href="#" class="btn">LINEで申し込む</a>
+    </div>
 
     <div class="footer">
       <p>主催：OYACHI DREAM BASE（代表：安斉 剛）</p>
