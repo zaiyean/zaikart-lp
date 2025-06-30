@@ -35,7 +35,7 @@
     h2 {
       font-size: 1.4em;
       margin-top: 30px;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
       color: #0099cc;
     }
     h3 {
@@ -47,9 +47,17 @@
       margin-bottom: 18px;
       font-size: 1em;
     }
-    ul li, dl dt, dl dd {
-      margin-left: 15px;
-      margin-bottom: 6px;
+    .info-box {
+      background: #f0faff;
+      border-left: 5px solid #0099cc;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .info-box dt {
+      font-weight: bold;
+      margin-bottom: 4px;
     }
     .img-center {
       display: block;
@@ -60,17 +68,18 @@
     }
     .btn {
       display: inline-block;
-      background: #ff9900;
+      background: #00C300;
       color: white;
-      padding: 12px 20px;
+      padding: 14px 20px;
       font-size: 1em;
       border-radius: 8px;
       text-decoration: none;
       transition: background 0.3s;
-      margin-top: 12px;
+      margin-top: 20px;
+      font-weight: bold;
     }
     .btn:hover {
-      background: #ff7700;
+      background: #00a600;
     }
     .faq dt {
       font-weight: bold;
@@ -90,8 +99,6 @@
       border-top: 2px dashed #ddd;
       border-radius: 0 0 10px 10px;
     }
-
-    /* スマホ向け微調整 */
     @media screen and (max-width: 480px) {
       h1 {
         font-size: 1.5em;
@@ -106,7 +113,6 @@
         width: 100%;
         text-align: center;
         font-size: 1em;
-        padding: 12px;
       }
     }
   </style>
@@ -118,11 +124,21 @@
 
     <h2>イベント概要</h2>
     <dl>
-      <dt>📅 開催日時</dt><dd>〇月〇日（土）13:00〜</dd>
-      <dt>📍 会場</dt><dd>大矢知コミュニティセンター</dd>
-      <dt>👦 対象</dt><dd>小学生（1〜6年生）</dd>
-      <dt>💰 参加費</dt><dd>初回限定500円（2回目以降は800円予定）</dd>
-      <dt>🎫 定員</dt><dd>先着8名（事前申込制）</dd>
+      <div class="info-box">
+        <dt>📅 開催日時</dt><dd>〇月〇日（土）13:00〜</dd>
+      </div>
+      <div class="info-box">
+        <dt>📍 会場</dt><dd>大矢知コミュニティセンター</dd>
+      </div>
+      <div class="info-box">
+        <dt>👦 対象</dt><dd>小学生（1〜6年生）</dd>
+      </div>
+      <div class="info-box">
+        <dt>💰 参加費</dt><dd>初回限定500円（2回目以降は800円予定）</dd>
+      </div>
+      <div class="info-box">
+        <dt>🎫 定員</dt><dd>先着8名（事前申込制）</dd>
+      </div>
     </dl>
 
     <h2>大会の特徴</h2>
@@ -156,7 +172,7 @@
 
     <h2>参加方法</h2>
     <p>LINE公式アカウントから事前エントリーをお願いします（先着順）。</p>
-    <a href="#" class="btn">📲 LINEで申し込む</a>
+    <a href="#" class="btn">LINEで申し込む</a>
 
     <div class="footer">
       <p>主催：OYACHI DREAM BASE（代表：安斉 剛）</p>
